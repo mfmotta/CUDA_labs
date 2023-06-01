@@ -262,10 +262,6 @@ paket-files/
 # Unignore all dirs
 #!*/
 
-#Unignore Makefile
-#!Makefile
-#!Makefile.in
-
 *.o
 *.json
 *.ppm
