@@ -267,4 +267,4 @@ paket-files/
 !Makefile.in
 
 *.o
-/**/*.ppm
+/CUDA_LABS/**/*.ppm
