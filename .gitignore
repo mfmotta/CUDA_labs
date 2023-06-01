@@ -12,3 +12,4 @@
 /.vscode
 
 *.o
+*.ppm
