@@ -6,7 +6,8 @@
 !*/
 
 #Unignore Makefile
-!/Makefile
+!Makefile
+!Makefile.in
 
 /.vscode
 
