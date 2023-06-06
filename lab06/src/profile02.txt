@@ -1,0 +1,67 @@
+==PROF== Connected to process 3377 (/home/truckels/CUDA_labs/lab06/src/exercise02)
+==PROF== Target process 3379 terminated before first instrumented API call.
+==PROF== Target process 3380 terminated before first instrumented API call.
+==PROF== Profiling "matrixMulCUDASharedMemory()" - 0: 0%....50%....100% - 8 passes
+==PROF== Disconnected from process 3377
+Properties of Device 0 
+maxBlocksPerMultiProcessor = 16 
+maxThreadsPerMultiProcessor = 1024 
+multiProcessorCount = 40 
+block size = 32 and minimum grid size = 40 for optimal occupancy 
+used grid size 32 
+Test passed successfully
+Kernel time was 2742.206543 with occupancy 1.000000 
+[3377] exercise02@127.0.0.1
+  matrixMulCUDASharedMemory() (32, 32, 1)x(32, 32, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/nsecond         4.99
+    SM Frequency            cycle/usecond       584.76
+    Elapsed Cycles                  cycle      4197741
+    Memory Throughput                   %        85.05
+    DRAM Throughput                     %         6.57
+    Duration                      msecond         7.18
+    L1/TEX Cache Throughput             %        86.45
+    L2 Cache Throughput                 %         4.34
+    SM Active Cycles                cycle   4129807.33
+    Compute (SM) Throughput             %        85.05
+    ----------------------- ------------- ------------
+
+    INF   The kernel is utilizing greater than 80.0% of the available compute or memory performance of the device. To   
+          further improve performance, work will likely need to be shifted from the most utilized to another unit.      
+          Start by analyzing workloads in the Compute Workload Analysis section.                                        
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                  1024
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                   1024
+    Registers Per Thread             register/thread              51
+    Shared Memory Configuration Size           Kbyte           32.77
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block      Kbyte/block            8.19
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread         1048576
+    Waves Per SM                                               25.60
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           16
+    Block Limit Registers                 block            1
+    Block Limit Shared Mem                block            4
+    Block Limit Warps                     block            1
+    Theoretical Active Warps per SM        warp           32
+    Theoretical Occupancy                     %          100
+    Achieved Occupancy                        %        99.96
+    Achieved Active Warps Per SM           warp        31.99
+    ------------------------------- ----------- ------------
+
+    INF   This kernel's theoretical occupancy is not impacted by any block limit.                                       
+

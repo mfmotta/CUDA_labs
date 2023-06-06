@@ -1,0 +1,11 @@
+Output of make when building with PTX flag -Xptxas=-v
+
+ptxas info    : 12582912 bytes gmem
+ptxas info    : Compiling entry function '_Z25matrixMulCUDASharedMemoryv' for 'sm_75'
+ptxas info    : Function properties for _Z25matrixMulCUDASharedMemoryv
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, 512 bytes smem, 352 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z13matrixMulCUDAv' for 'sm_75'
+ptxas info    : Function properties for _Z13matrixMulCUDAv
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 46 registers, 352 bytes cmem[0] 
