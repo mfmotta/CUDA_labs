@@ -1,3 +1,5 @@
+<div style="text-align: left"> # Shared Memory and Profiling </div>
+
 # Shared Memory
 
 These exercises explore the concept of Shared Memory:
