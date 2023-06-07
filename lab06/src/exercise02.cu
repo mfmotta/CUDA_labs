@@ -44,7 +44,7 @@ __global__ void matrixMulCUDASharedMemory()
 	int threadCol = threadIdx.x;
 	int threadRow = threadIdx.y;
 	
-	extern __shared__ int sm[];
+	extern __shared__ int sm[];  //dynamic shared memory
 	int *sm_pointer = sm;
 	float *As = (float*)&sm_pointer[0];
 	float *Bs = (float*)&As[BLOCK_SIZE*BLOCK_SIZE];
